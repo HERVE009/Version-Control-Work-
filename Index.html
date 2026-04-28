@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant World</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: green;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center/cover;
+    color: white;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 50px;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Plant Cards */
+.plants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+}
+.card img {
+    width: 100%;
+}
+
+/* Contact */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+button {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#plants">Plants</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero -->
+<div class="hero" id="home">
+    <div>
+        <h1>Welcome to Plant World 🌱</h1>
+        <p>Discover beautiful plants for your home</p>
+    </div>
+</div>
+
+<!-- Plants Section -->
+<section id="plants">
+    <h2>Our Plants</h2>
+    <div class="plants">
+        
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+            <h3>Aloe Vera</h3>
+            <p>Easy to grow and good for health.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+            <h3>Snake Plant</h3>
+            <p>Perfect indoor plant for beginners.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+            <h3>Peace Lily</h3>
+            <p>Beautiful and air-purifying plant.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We provide the best plants to decorate your home and improve air quality.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(); return false;">
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Plant World</p>
+</footer>
+
+<script>
+function sendMessage() {
+    alert("Message sent successfully!");
+}
+</script>
+
+</body>
+</html>
